@@ -2,6 +2,8 @@
 
 ## Shows the current Bitcoin price on Binance and Upbit.  
 
+<img width="361" alt="스크린샷 2022-04-27 21 16 10" src="https://user-images.githubusercontent.com/46402145/165516105-23053c4a-d595-4e96-86f6-e5d692a073f0.png">  
+
 ### Symbol(market) :  
 
 Binance - BTCUTDT  
