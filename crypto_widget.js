@@ -137,7 +137,7 @@ const binanceChartRes = await binanceChartReq.loadJSON()
 binanceInfo['openingPrice'] = Number(binanceChartRes[0][1])
 binanceInfo.timePrice.push(binanceInfo.openingPrice)
 
-for (var i = 0; i < binanceChartRes.length; i++) {
+for (var i = 1; i < binanceChartRes.length; i++) {
 	var openPrice = +binanceChartRes[i][1]
 	var closePrice = +binanceChartRes[i][4]
 	var meanPrice = (openPrice + closePrice) / 2
@@ -185,7 +185,7 @@ for (var i = 0; i < upbitChartRes.length; i++) {
 	dateTime = new Date(upbitChartRes[i].candle_date_time_kst);
 	var upbitDateTime = dateTime.getTime();
 	
-	if (upbitDateTime >= upbitInfo.startTime) {
+	if (upbitDateTime > upbitInfo.startTime) {
 		var openPrice = upbitChartRes[i].opening_price
 		var closePrice = upbitChartRes[i].trade_price
 		var meanPrice = (openPrice + closePrice) / 2
