@@ -89,8 +89,8 @@ const ENV = {// Define colors and other parameters:
     "colors": {
         "bg": new Color('#131722'),
         "normal": new Color('#B2B5BE'),
-        "red": new Color('#EF5350'),
-        "green": new Color('#26A69A'),
+        "red": new Color('#F23645'),
+        "green": new Color('#22AB94'),
         "white": new Color('#FFFFFF'),
         "gray": Color.gray(),
         "gold": new Color('#D4AF37')
